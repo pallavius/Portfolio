@@ -1,0 +1,130 @@
+body {
+  background: #fffbe6;
+  color: #222;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #222;
+  color: #fff;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0002;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  background: #ffe066;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #ffd60a;
+}
+
+input, textarea {
+  border: 1px solid #ffe066;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin: 0.2rem 0 1rem 0;
+  width: 100%;
+  font-size: 1rem;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+footer {
+  background: #222;
+  color: #ffe066;
+  border-radius: 0 0 12px 12px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffe066;
+  box-shadow: 0 2px 12px #0002;
+  background: #fffbe6;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ffe066;
+  box-shadow: 0 2px 8px #0001;
+  background: #fffbe6;
+  transition: transform 0.2s;
+}
+.portfolio-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px #0002;
+}
+
+.service-icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+    padding: 0;
+  }
+  nav {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .card {
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+  }
+  .portfolio-img {
+    height: 80px;
+  }
+  section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  h1, h2, h3, h4 {
+    font-size: 1.1em;
+  }
+  /* Stack flex layouts vertically */
+  .portfolio-flex, .services-flex {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+} 
